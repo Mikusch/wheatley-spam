@@ -1,0 +1,48 @@
+/**
+ * Copyright (C) 2022  Mikusch
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+"Games"
+{
+	"tf"
+	{
+		"Offsets"
+		{
+			"CBaseEntity::UpdateOnRemove"
+			{
+				"windows"	"108"
+				"linux"		"109"
+				"mac"		"109"
+			}
+			"CTFPlayer::m_iSappingEvent"
+			{
+				"windows"	"9100"
+				"linux"		"9104"
+				"mac"		"9104"
+			}
+		}
+		"Functions"
+		{
+			"CBaseEntity::UpdateOnRemove"
+			{
+				"offset"	"CBaseEntity::UpdateOnRemove"
+				"hooktype"	"entity"
+				"return"	"void"
+				"this"		"entity"
+			}
+		}
+	}
+}
