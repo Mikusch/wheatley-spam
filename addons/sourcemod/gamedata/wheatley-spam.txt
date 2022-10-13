@@ -29,9 +29,9 @@
 			}
 			"CTFPlayer::m_iSappingEvent"
 			{
-				"windows"	"9100"
-				"linux"		"9104"
-				"mac"		"9104"
+				"windows"	"9120"
+				"linux"		"9124"
+				"mac"		"9124"
 			}
 		}
 		"Functions"

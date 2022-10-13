@@ -36,7 +36,7 @@ public Plugin myinfo =
 	name = "Wheatley Sapper Spam",
 	author = "Mikusch",
 	description = "Restores the infamous Ap-Sap voice line spam exploit.",
-	version = "1.0.0",
+	version = "1.0.1",
 	url = "https://github.com/Mikusch/wheatley-spam"
 }
 
