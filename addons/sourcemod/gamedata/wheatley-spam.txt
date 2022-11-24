@@ -27,11 +27,11 @@
 				"linux"		"109"
 				"mac"		"109"
 			}
-			"CTFPlayer::m_iSappingEvent"
+			"CTFPlayer::m_iSappingEvent"	// Relative offset from m_nActiveWpnClip
 			{
-				"windows"	"9120"
-				"linux"		"9124"
-				"mac"		"9124"
+				"windows"	"24"
+				"linux"		"24"
+				"mac"		"24"
 			}
 		}
 		"Functions"

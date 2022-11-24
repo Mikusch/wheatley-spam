@@ -36,7 +36,7 @@ public Plugin myinfo =
 	name = "Wheatley Sapper Spam",
 	author = "Mikusch",
 	description = "Restores the infamous Ap-Sap voice line spam exploit.",
-	version = "1.0.1",
+	version = "1.0.2",
 	url = "https://github.com/Mikusch/wheatley-spam"
 }
 
@@ -52,11 +52,15 @@ public void OnPluginStart()
 		}
 		
 		g_iOffsetSappingEvent = hGameData.GetOffset("CTFPlayer::m_iSappingEvent");
-		if (!g_iOffsetSappingEvent)
+		if (g_iOffsetSappingEvent)
+		{
+			// Calculate absolute offset
+			g_iOffsetSappingEvent += FindSendPropInfo("CTFPlayer", "m_nActiveWpnClip");
+		}
+		else
 		{
 			SetFailState("Failed to retrieve offset for CTFPlayer::m_iSappingEvent");
 		}
-		
 	}
 	delete hGameData;
 }
