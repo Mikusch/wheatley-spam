@@ -23,9 +23,9 @@
 		{
 			"CBaseEntity::UpdateOnRemove"
 			{
-				"windows"	"108"
-				"linux"		"109"
-				"mac"		"109"
+				"windows"	"110"
+				"linux"		"111"
+				"mac"		"111"
 			}
 			"CTFPlayer::m_iSappingEvent"	// Relative offset from m_nActiveWpnClip
 			{
